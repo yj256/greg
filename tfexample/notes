@@ -1,0 +1,20 @@
+Design decisions:
+1. Which optimizer to use, at what learning rate?
+2. What type of metrics are needed to understand the model?
+
+
+
+Two approaches:
+
+1. Pre-defined Estimators:
+	DNNRegressor
+	simple to use
+	less control
+	limited metrics for testing/ understanding model
+	can use tf.contrib.estimator.add_metrics to add metrics
+
+2. tf.estimator.Estimator (cutomized estimator):
+	Can design your own model
+	still relatively high level abstraction
+	more control but also requires more understand and coding
+	can 
